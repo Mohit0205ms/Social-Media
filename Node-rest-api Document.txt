@@ -1,0 +1,46 @@
+
+In this project we will use
+
+1.) Express-->It is node.js frame work.we our gonna build out application on this framework. Baically our server run on this express
+
+2.) Mongose-->It helps us to create our models that we can create our documents inside mongodb like users posts or whatever we want to store
+
+3.) detenv-->It's gonna give us some secret URL which includes our database server name andour username and password so if you use it directly someone can steal it and use for his purpose so 	     we have to hide it somewhere in save so not only that URL any keys any secret keys and any passwords you can keep inside this emv file.
+
+4.) helmet-->when we start making requests to server it's gonna help us to stay secure Because when you make requests, the request header carries some vulnerable properties inside it so   	     helemt prevents some of them and adds some new properties for extra security.
+
+5.) morgan-->Morgan is a middlewere whenever you make a request to server it's going to return which request has made and what was results and how long it took so we can see our results in 	     our console here.
+
+6.) nodemon-->when you create node application when ever you make change inside of any file you have to come to console and say restart all the time so nodemon allows us to start server once 	      and anytime we change something inside our application it's gonna refresh the application so it's kinda listening our files herethese libarary we are going to use in our this project.
+
+Proper understanding of above liberaries
+----------------------------------------
+Helmet:-
+-------->  Helmet.js is an open source JavaScript library that helps you secure your Node. js application by setting several HTTP headers. It acts as a middleware for Express and similar technologies, automatically adding or removing HTTP headers to comply with web security standards.
+
+
+
+1.) firstly we will delete "test" key value pair from script and add "start":"nodemon index.js" from package.json.
+2.) then we will create index.js file inside the node-rest-api
+
+
+password:-
+---------->
+	    n3JMMQRy7hoXbBzN
+username:-
+---------->
+ 	    mohitsingh14534
+
+postman is used to make test the api that we made 
+To check get url address of local host and open social and paste it on url header 
+then set text as json and body as raw
+
+we also added bcrypt libirary
+              --------------- it will allow us to change our password in random gibberish code
+   
+To show timeago of post we added timeago liberary in react-social
+
+we use context api
+------------------
+	context provides a way to pass data through the components tree without having to pass props down manually at every level
+we using context at place of redux because our project is small so that's why we using context but we also can use redux but redux manily used for large scale project  
